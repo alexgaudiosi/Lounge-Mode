@@ -27,10 +27,21 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring'  
 
 gem 'pg'
+
+gem 'omniauth-facebook'
       
 
-group :development do
+group :development, :test do
+
 	gem 'sqlite3'
+	gem 'rspec-rails'
+		
+end
+
+group :test do
+
+	gem 'capybara'
+	
 end
 	
 
